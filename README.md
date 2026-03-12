@@ -12,8 +12,15 @@
 *  **資料來源**: 羅東博愛醫院提供的 784 張標記 X-ray 影像。
 *  **解決過擬合 (Overfitting)**: 初期訓練因資料量不足產生嚴重過擬合。本專案實作了資料擴增 (Data Augmentation)，透過將影像進行不同角度的旋轉，成功提升模型的泛化能力。
 
-## 實驗成效 (Results)
+## 實驗結果
  經過 8000 次與 12000 次訓練週期的比較，**R-50 模型**展現出最佳的抗過擬合能力與定位精度：
 *  **最佳模型**: R-50 
 *  **AP50 指標**: 81.85%
 *  **總損失 (Total Loss)**: 0.2092 (8000次訓練)
+
+## 截圖
+*  **訓練次數**: 8000 
+<img width="1515" height="577" alt="image" src="https://github.com/user-attachments/assets/ecdf9cc3-4282-4f1f-b44d-4e03e0e83ac1" />
+
+*  **訓練次數**: 12000 
+<img width="1520" height="577" alt="image" src="https://github.com/user-attachments/assets/7847506b-ff94-4568-9eb7-ccdc9d35d4f4" />
